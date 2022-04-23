@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand&display=swap');
+
+body {
+    text-align: center;
+    align-content: center;
+    background-color: #f7f7f7;
+    margin: 1em 15%;
+    font-family: Quicksand, Arial;
+}
+header {
+    display: flex;
+    padding: 20px;
+}
+h1 {
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    font-size: 3em;
+    margin: auto;
+    font-family: Lato, Arial;
+}
+h2 {
+    font-size: 2em;
+}
+ul {
+    align-items: center;
+    text-align: left;
+}
+li {
+    padding: .25em;
+    font-family: monospace;
+}
+a {
+    color:blue;
+    text-decoration: none;
+}
+a:hover {
+    color:black;
+}
+.addBorder {
+    background-color: #9a65ea;
+    border-radius: 15px;
+    color: #ffffff;
+}
+.addLightShadow {
+    box-shadow: 7px 7px 7px #868686;
+}
+.addDarkShadow {
+    box-shadow: 7px 7px 7px #333333;
+}
+#copyright {
+    font-size: 1.25em;
+    margin: auto;
+    padding: .25em;
+}
+#lastModified {
+    margin: auto;
+    color: rgb(142, 217, 252);
+    padding: .25em;
+}
