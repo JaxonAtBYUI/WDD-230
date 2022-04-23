@@ -48,12 +48,12 @@ a:hover {
 .addDarkShadow {
     box-shadow: 7px 7px 7px #333333;
 }
-#copyright {
+.copyright {
     font-size: 1.25em;
     margin: auto;
     padding: .25em;
 }
-#lastModified {
+.lastModified {
     margin: auto;
     color: rgb(142, 217, 252);
     padding: .25em;
