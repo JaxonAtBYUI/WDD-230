@@ -8,8 +8,14 @@ body {
     font-family: Quicksand, Arial;
 }
 header {
+    align-items: center;
     display: flex;
     padding: 20px;
+    flex-direction: column;
+    row-gap: 10px;
+}
+img {
+    max-width: 173px;
 }
 h1 {
     justify-content: center;
@@ -39,8 +45,8 @@ a:hover {
 }
 .addBorder {
     background-color: #7831E3;
-    border-radius: 15px;
     color: #ffffff;
+    border-radius: 15px;
 }
 .addLightShadow {
     box-shadow: 7px 7px 7px #868686;

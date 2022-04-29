@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand&display=swap');
+
+body {
+    text-align: center;
+    margin: 0 auto;
+}
+header {
+    background-color: #23185e;
+    color: white;
+}
+h1 {
+    font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    padding: 10px;
+}
+h2 {
+    font-family: Quicksand, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 10px;
+}
+section {
+    margin: 2% 5%;
+    display: flex;
+    flex-direction: column;
+    border: 1px darkgray solid;
+    border-radius: 15px;
+    text-align: left;
+    background-color: rgb(232, 230, 230);
+}
+p, a {
+    font-family: Quicksand, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    font-size: 1.5em;
+}
+h3 {
+    font-family: Quicksand, Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #23185e;
+    border-radius: 15px 15px 0px 0px;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+    padding: 3%;
+}
+p, a {
+    font-family: Quicksand, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    font-size: 1.25em;
+    padding: .5em;
+}
+img {
+    width: 90%;
+    max-width: 512px;
+    align-self: center;
+}
+footer {
+    padding: 20px;
+    background-color: #23185e;
+    color: white;
+}
+#grid {
+    padding: 10px
+}
