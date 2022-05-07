@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Raleway&display=swap');
+
+
+:root {
+    --color1: #4d5828;
+    --color2: #694424;
+    --accent1: #606c38;
+    --accent2: #c8904f;
+    --background: #faf8ee;
+}
+body {
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--background);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+header {
+    background-color: var(--color1);
+    color: var(--background);
+    font-family: Macondo;
+    padding: 10px;
+}
+#bannerLogo {
+    max-width: 100px;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    row-gap: 10px;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: Macondo;
+}
+p, li{
+    font-family: Raleway;
+}
+a {
+    text-decoration: none;
+    color: var(--background);
+}
+footer {
+    margin-top: auto;
+    background-color: var(--color2);
+    padding: 10px;
+}
+footer p {
+    margin: 0 auto;
+    color: var(--background)
+}
+
+main {
+    margin: 0 5%;
+}
+section {
+    background-color: var(--accent2);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--color2);
+    color: black;
+    margin: 20px auto;
+}
+section img {
+    box-shadow: 2px 2px 6px var(--color2);
+}
+#logo{
+    background-color: var(--background);
+    color: black;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 15px;
+}
+img {
+    max-width: 90%;
+}
+.transparent {
+    box-shadow: none;
+}
+ul {
+    text-align: left;
+}
+#fontList{
+    font-size: 1.25em;
+    max-width: 500px;
+}
+.activePage {
+    color: rgb(230, 230, 153)
+ }
+/* Handle the grid that is in the color scheme page */
+.container {
+    display: grid;
+    grid-template-rows: repeat(5, 2em 4em);
+    align-items: center;
+    row-gap: 5px;
+    padding:2%;
+    background-color: rgb(236, 234, 218);
+    margin-bottom: 5%;
+    box-shadow: 5px 5px 10px rgb(236, 234, 218);
+}
+#gridHeader1, #gridHeader2, #gridHeader3, #gridHeader4, #gridHeader5 {
+    padding: 3%;
+}
+#gridHeader1 p, #gridHeader2 p, #gridHeader3 p, #gridHeader4 p, #gridHeader5 p {
+    font-family: Macondo;
+}
+#gridHeader1 {
+    grid-row: 1/2;
+}
+#color1 {
+    grid-row: 2/3;
+    background-color: var(--color1);
+    text-align: center;
+    color: var(--background);
+}
+#gridHeader2 {
+    grid-row: 3/4;
+}
+#color2 {
+    grid-row: 4/5;
+    background-color: var(--color2);
+    text-align: center;
+    color: var(--background);
+}
+#gridHeader3 {
+    grid-row: 5/6;
+}
+#color3 {
+    grid-row: 6/7;
+    background-color: var(--accent1);
+    text-align: center;
+    color: var(--background);
+}
+#gridHeader4 {
+    grid-row: 7/8;
+}
+#color4 {
+    grid-row: 8/9;
+    background-color: var(--accent2);
+    text-align: center;
+    color: var(--background);
+}
+#gridHeader5 {
+    grid-row: 9/10;
+}
+#color5 {
+    grid-row: 10/11;
+    background-color: var(--background);
+}

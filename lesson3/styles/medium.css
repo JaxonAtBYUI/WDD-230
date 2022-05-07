@@ -1,0 +1,27 @@
+@media only screen and (min-width: 320px) {
+    nav {
+        margin: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 700px;
+    }
+    img {
+        max-width: 325px;
+    }
+
+}
+@media only screen and (min-width: 600px) {
+    .container {
+        max-width: 550px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 2em 6em;
+        margin: 10px auto;
+        column-gap: 10px;
+    }
+    #gridHeader1, #gridHeader2, #gridHeader3, #gridHeader4, #gridHeader5 {
+        grid-row: 1/2;
+    }
+    #color1, #color2, #color3, #color4, #color5 {
+        grid-row: 2/3;
+    }
+}
