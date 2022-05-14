@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Raleway&display=swap');
+:root {
+    --color1: #4d5828;
+    --color2: #694424;
+    --accent1: #606c38;
+    --accent2: #c8904f;
+    --background: #faf8ee;
+
+    --macondo: Macondo, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    --raleway: Raleway, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* General Rules for the pages. */
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--background);
+    font-family: var(--raleway);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--macondo);
+}
+
+/* Set up the header */
+header {
+    background-color: var(--color1);
+    color: white;
+}
+.headerFlex {
+    display: flex;
+    flex-direction: column;
+}
+.headerLogo {
+    max-width: 100px;
+    width: 50%;
+    align-self: center;
+}
+header h1 {
+    font-size: 7vw;
+    margin: 0;
+    padding: 0px 10px;
+}
+.currentDate {
+    margin: 2% 3%;
+    border: 2px solid rgba(0, 0, 0, .25);
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: 2px 2px 3px var(--accent1);
+    padding: .2em .5em;
+}
+
+    /* Set up the navigation bar */
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.navigation li{
+    display: none;
+}
+.navigation li:first-child {
+    display: block;
+    font-size: 1.5em;
+    border: none
+}
+.navigation li a:hover {
+    background-color: var(--accent2);
+    box-shadow: 0px 3px .4em var(--color2);
+}
+.navigation li a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--macondo);
+    display: block;
+    padding: .5em;
+}
+.displayNavigation  li{
+    display: block;
+}
+.navigation li .activePage {
+    color: yellow;
+}
+
+/* Set up the footer */
+footer {
+    background-color: var(--accent2);
+    font-size: .75em;
+    padding: 10px 0px;
+    color: white;
+}
+.footerFlex {
+    display: flex;
+    flex-direction: column;
+}
+.footerLogo {
+    max-width: 75px;
+    align-self: center;
+}
+.footerFlex p {
+    margin: 2px;
+}
+.footerFlex p a{
+    text-decoration: none;
+    color: black;
+}
+.footerFlex hr {
+    align-self: stretch;
+    margin: 3px 2em;
+    background-color: var(--color2);
+    border-color: #694424;
+    border-top: #c8904f;
+    border-left: #c8904f;
+}
+
+/* Layout the homepage grid */
+#homepageGrid {
+    display: grid;
+    margin: 5% 10px;
+    grid-template-columns: 1fr;
+    row-gap: .5em;
+}
+.heroContainer {
+    height: 200px;
+    background-color: lightgray;
+    border: 2px solid gray;
+}
+#homepageEvents{
+    height: 200px;
+    background-color: lightgray;
+    border: 2px solid gray;
+}
+#homepageWeather {
+    height: 200px;
+    background-color: lightgray;
+    border: 2px solid gray;
+}
+#homepageNews {
+    height: 200px;
+    background-color: lightgray;
+    border: 2px solid gray;
+}
+#spotlight {
+    background-color: lightgray;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#spot1 {
+    margin: 2%;
+    height: 180px;
+    background-color: lightgray;
+    border: 2px solid gray;
+}
+#spot2 {
+    margin: 2%;
+    height: 180px;
+    background-color: lightgray;
+    border: 2px solid gray;
+}
+#spot3 {
+    margin: 2%;
+    height: 180px;
+    background-color: lightgray;
+    border: 2px solid gray;
+    display:none;
+}
+#homepageJoin {
+    height: 200px;
+    background-color: lightgray;
+    border: 2px solid gray;
+    display: none;
+}
