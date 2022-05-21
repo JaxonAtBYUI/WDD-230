@@ -47,6 +47,15 @@ header h1 {
     box-shadow: 2px 2px 3px var(--accent1);
     padding: .2em .5em;
 }
+.meetAndGreet {
+    margin: 3px 5%;
+    padding: 3px;
+}
+.meetAndGreet hr {
+    border-color: black;
+    border-top: var(--color1);
+    border-left: var(--color1);
+}
 
     /* Set up the navigation bar */
 .navigation {
@@ -78,7 +87,7 @@ header h1 {
     display: block;
 }
 .navigation li .activePage {
-    color: yellow;
+    color: rgb(230, 230, 153);
 }
 
 /* Set up the footer */
@@ -107,12 +116,26 @@ footer {
     align-self: stretch;
     margin: 3px 2em;
     background-color: var(--color2);
-    border-color: #694424;
-    border-top: #c8904f;
-    border-left: #c8904f;
+    border-color: var(--color2);
+    border-top: var(--accent2);
+    border-left: var(--accent2);
 }
 
 /* Layout the homepage grid */
+.homepageContainer {
+    background-color: var(--accent2);
+    box-shadow: 2px 2px 7px var(--color2);
+    padding: 3px;
+}
+.homepageContainer h3 {
+    text-shadow: 1px 1px 2px var(--color2);
+}
+.homepageContainer hr {
+    background-color: var(--color2);
+    border-color: var(--color2);
+    border-top: var(--accent2);
+    border-left: var(--accent2);
+}
 #homepageGrid {
     display: grid;
     margin: 5% 10px;
@@ -121,53 +144,80 @@ footer {
 }
 .heroContainer {
     height: 200px;
-    background-color: lightgray;
-    border: 2px solid gray;
+    position: relative;
+    text-align: center;
+    background-color: rgba(250, 248, 238, 0);
+    box-shadow: none;
+}
+.heroContainer img {
+    max-width: 100%;
+    max-height: 200px
+}
+.heroContainer h3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    margin: 0;
+    text-shadow: 3px 3px 3px black;
 }
 #homepageEvents{
     height: 200px;
-    background-color: lightgray;
-    border: 2px solid gray;
 }
 #homepageWeather {
     height: 200px;
-    background-color: lightgray;
-    border: 2px solid gray;
 }
 #homepageNews {
     height: 200px;
-    background-color: lightgray;
-    border: 2px solid gray;
 }
 #spotlight {
-    background-color: lightgray;
-    border: 2px solid gray;
+    background-color: var(--accent1);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    box-shadow: 2px 2px 7px var(--color1);
+}
+#spotlight section img {
+    max-width: 33%;
+    max-height: 33%;
 }
 #spot1 {
     margin: 2%;
     height: 180px;
-    background-color: lightgray;
-    border: 2px solid gray;
 }
 #spot2 {
     margin: 2%;
     height: 180px;
-    background-color: lightgray;
-    border: 2px solid gray;
 }
 #spot3 {
     margin: 2%;
     height: 180px;
-    background-color: lightgray;
-    border: 2px solid gray;
     display:none;
 }
 #homepageJoin {
     height: 200px;
-    background-color: lightgray;
-    border: 2px solid gray;
     display: none;
+}
+#homepageJoin button {
+    margin-top: 10%;
+    background-color: #694424;
+    border-radius: 6px;
+    border: none;
+    width: 90%;
+    height: 20%;
+    font-size: 1.25em;
+    color: white;
+    box-shadow: 2px 2px 3px var(--color2);
+}
+#homepageJoin button:hover {
+    background-color: rgba(0, 0 , 0, .75);
+    cursor: pointer;
+}
+#homepageJoin a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: var(--macondo);
 }
