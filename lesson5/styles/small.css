@@ -210,10 +210,7 @@ footer {
     font-size: 1.25em;
     color: white;
     box-shadow: 2px 2px 3px var(--color2);
-}
-#homepageJoin button:hover {
-    background-color: rgba(0, 0 , 0, .75);
-    cursor: pointer;
+    z-index: -1;
 }
 #homepageJoin a {
     display: block;
