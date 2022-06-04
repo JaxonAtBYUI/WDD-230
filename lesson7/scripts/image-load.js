@@ -1,12 +1,12 @@
 // Get all the images
-const images = document.querySelector('img');
+const images = document.querySelectorAll('img');
 const options = {threshold: .5, rootMargin:"0px 0px 100px 0px"}
 
 // Create a new observer
 const io = new IntersectionObserver (
     (entries, io) => {
         entries.forEach(entry => {
-            if (!entry.isINtersecting) {
+            if (!entry.isIntersecting) {
                 return;
             }
             else {

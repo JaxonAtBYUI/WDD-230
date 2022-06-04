@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand&display=swap');
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+header {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #23185e;
+    color: white;
+    padding: 20px;
+}
+h1 {
+        font-family: Lato,Verdana,Geneva,Tahoma,sans-serif;
+        margin: auto;
+        padding: 10px;
+}
+.container {
+    width: 300px;
+    margin: 15px auto;
+}
