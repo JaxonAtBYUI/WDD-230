@@ -60,4 +60,17 @@
         flex-direction: row;
         align-items: center;
     }
+
+    /* Discover Page Grid */
+    .discoverContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+    .discoverFigure img {
+        filter: blur(1px) grayscale(75%);
+        transition-duration: .5s;
+    }
+    .discoverFigure img:hover {
+        filter: none;
+        max-width: 93%;
+    }
 }

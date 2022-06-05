@@ -218,3 +218,22 @@ footer {
     text-decoration: none;
     font-family: var(--macondo);
 }
+
+/* Discover Page Grid */
+
+.discoverContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5%;
+    gap: 10px;
+}
+.discoverFigure {
+    width: 100%;
+    margin: 0;
+}
+.discoverFigure img {
+    max-width: 95%;
+}
+.discoverFigure figcaption {
+    font-size: .75em;
+}

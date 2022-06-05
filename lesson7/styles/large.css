@@ -64,4 +64,9 @@
     .footerFlex {
         justify-content: space-around;
     }
+
+    /* Discover Page Grid */
+    .discoverContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
