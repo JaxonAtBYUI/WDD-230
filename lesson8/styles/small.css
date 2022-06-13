@@ -56,6 +56,56 @@ header h1 {
     border-top: var(--color1);
     border-left: var(--color1);
 }
+.formTop, .inputHeader {
+    display: block;
+    padding-top: 1em;
+    font-size: .9em;
+}
+.formTop input {
+    display: block;
+    margin: 0;
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+.formTop input:required {
+    border-left: 6px solid red;
+}
+.formTop input:required:valid {
+    border-left: 6px solid green;
+}
+.formTop input:focus {
+    background-color: white;
+}
+.formSbs {
+    display: block;
+    padding: .75rem 0;
+}
+.formSubmit {
+    border: none;
+    background-color: var(--accent2);
+    border-radius: 1rem;
+    padding: .74rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    cursor: pointer;
+}
+.formTextArea {
+    display: block;
+    resize: none;
+    width: 100%;
+    max-width: 20rem;
+    height: 6rem;
+    font-size: 1.05em;
+    margin-top: 5px;
+    font-family: var(--raleway);
+}
+
 
     /* Set up the navigation bar */
 .navigation {
@@ -236,4 +286,44 @@ footer {
 }
 .discoverFigure figcaption {
     font-size: .75em;
+}
+
+/* Join Us Page CSS */
+#joinInformation {
+    margin: 15px auto;
+    width: 90%;
+    background-color: var(--accent2);
+    padding: 2%;
+    border-radius: 10px;
+}
+#joinInformation ul {
+    font-size: 1.25em;
+    font-family: var(--macondo);
+}
+#joinInformation ul li{
+    text-align: left;
+    font-size: .75em;
+    font-family: var(--raleway);
+}
+
+#joinForm {
+    text-align: left;
+    margin: 0px 2% 15px;
+}
+#joinForm fieldset {
+    margin: 2em auto .75em;
+    border: 1px solid var(--color2);
+    border-radius: 10px;
+    padding: .5em 2%;
+}
+#joinForm legend {
+    color: var(--color2);
+    margin: 0 1em;
+}
+
+/* Thank you Page */
+#thankYou {
+    margin: 15% auto;
+    padding: 50px;
+    font-size: 3rem;
 }

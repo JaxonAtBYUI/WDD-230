@@ -69,4 +69,19 @@
     .discoverContainer {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    /* Join Us Page Grid */
+    #joinGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+    #joinForm {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #joinInformation {
+        grid-column: 2/3;
+        width: 100%;
+    }
 }

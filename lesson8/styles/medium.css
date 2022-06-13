@@ -13,6 +13,12 @@
         margin: 0;
         flex-grow: 1;
     }
+
+    /* Form Classes */
+    .formSbs {
+        padding: .4rem;
+    }
+
     /* Specify the homepage grid. */
     #homepageGrid {
     grid-template-columns: 1fr 1fr 1fr;
