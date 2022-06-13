@@ -74,7 +74,6 @@
     #joinGrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-columns: 1fr;
     }
     #joinForm {
         grid-column: 1/2;
@@ -82,6 +81,6 @@
     }
     #joinInformation {
         grid-column: 2/3;
-        width: 100%;
+        width: 90%;
     }
 }
