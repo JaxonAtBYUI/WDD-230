@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Raleway&display=swap');
+:root {
+    --color1: #4d5828;
+    --color2: #694424;
+    --accent1: #606c38;
+    --accent2: #c8904f;
+    --background: #faf8ee;
+
+    --macondo: Macondo, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    --raleway: Raleway, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* General Rules for the pages. */
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--background);
+    font-family: var(--raleway);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--macondo);
+}
+
+/* Set up the header */
+header {
+    background-color: var(--color1);
+    color: white;
+}
+.headerFlex {
+    display: flex;
+    flex-direction: column;
+}
+.headerLogo {
+    max-width: 100px;
+    width: 50%;
+    align-self: center;
+}
+header h1 {
+    font-size: 7vw;
+    margin: 0;
+    padding: 0px 10px;
+}
+.currentDate {
+    margin: 2% 3%;
+    border: 2px solid rgba(0, 0, 0, .25);
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: 2px 2px 3px var(--accent1);
+    padding: .2em .5em;
+}
+.meetAndGreet {
+    margin: 3px 5%;
+    padding: 3px;
+}
+.meetAndGreet hr {
+    border-color: black;
+    border-top: var(--color1);
+    border-left: var(--color1);
+}
+.formTop, .inputHeader {
+    display: block;
+    padding-top: 1em;
+    font-size: .9em;
+}
+.formTop input {
+    display: block;
+    margin: 0;
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+.formTop input:required {
+    border-left: 6px solid red;
+}
+.formTop input:required:valid {
+    border-left: 6px solid green;
+}
+.formTop input:focus {
+    background-color: white;
+}
+.formSbs {
+    display: block;
+    padding: .75rem 0;
+}
+.formSubmit {
+    border: none;
+    background-color: var(--accent2);
+    border-radius: 1rem;
+    padding: .74rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    cursor: pointer;
+}
+.formTextArea {
+    display: block;
+    resize: none;
+    width: 100%;
+    max-width: 20rem;
+    height: 6rem;
+    font-size: 1.05em;
+    margin-top: 5px;
+    font-family: var(--raleway);
+}
+
+
+    /* Set up the navigation bar */
+.navigation {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+.navigation li{
+    display: none;
+}
+.navigation li:first-child {
+    display: block;
+    font-size: 1.5em;
+    border: none
+}
+.navigation li a:hover {
+    background-color: var(--accent2);
+    box-shadow: 0px 3px .4em var(--color2);
+}
+.navigation li a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--macondo);
+    display: block;
+    padding: .5em;
+}
+.displayNavigation  li{
+    display: block;
+}
+.navigation li .activePage {
+    color: rgb(230, 230, 153);
+}
+
+/* Set up the footer */
+footer {
+    background-color: var(--accent2);
+    font-size: .75em;
+    padding: 10px 0px;
+    color: black;
+}
+.footerFlex {
+    display: flex;
+    flex-direction: column;
+}
+.footerLogo {
+    max-width: 75px;
+    align-self: center;
+}
+.footerFlex p {
+    margin: 2px;
+}
+.footerFlex p a{
+    text-decoration: none;
+    color: black;
+}
+.footerFlex hr {
+    align-self: stretch;
+    margin: 3px 2em;
+    background-color: var(--color2);
+    border-color: var(--color2);
+    border-top: var(--accent2);
+    border-left: var(--accent2);
+}
+
+/* Layout the homepage grid */
+.homepageContainer {
+    background-color: var(--accent2);
+    box-shadow: 2px 2px 7px var(--color2);
+    padding: 3px;
+}
+.homepageContainer h3 {
+    text-shadow: 1px 1px 2px var(--color2);
+}
+.homepageContainer hr {
+    background-color: var(--color2);
+    border-color: var(--color2);
+    border-top: var(--accent2);
+    border-left: var(--accent2);
+}
+#homepageGrid {
+    display: grid;
+    margin: 5% 10px;
+    grid-template-columns: 1fr;
+    row-gap: .5em;
+}
+.heroContainer {
+    height: 200px;
+    position: relative;
+    text-align: center;
+    background-color: rgba(250, 248, 238, 0);
+    box-shadow: none;
+}
+.heroContainer img {
+    max-width: 100%;
+    max-height: 200px
+}
+.heroContainer h3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    margin: 0;
+    text-shadow: 3px 3px 3px black;
+}
+#homepageEvents{
+    height: 200px;
+}
+#homepageWeather {
+    height: 200px;
+}
+#homepageNews {
+    height: 200px;
+}
+#spotlight {
+    background-color: var(--accent1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 2px 2px 7px var(--color1);
+}
+#spotlight section img {
+    max-width: 33%;
+    max-height: 33%;
+}
+#spot1 {
+    margin: 2%;
+    height: 180px;
+}
+#spot2 {
+    margin: 2%;
+    height: 180px;
+}
+#spot3 {
+    margin: 2%;
+    height: 180px;
+    display:none;
+}
+#homepageJoin {
+    height: 200px;
+    display: none;
+}
+#homepageJoin button {
+    margin-top: 10%;
+    background-color: #694424;
+    border-radius: 6px;
+    border: none;
+    width: 90%;
+    height: 20%;
+    font-size: 1.25em;
+    color: white;
+    box-shadow: 2px 2px 3px var(--color2);
+    z-index: -1;
+}
+#homepageJoin a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: var(--macondo);
+}
+
+/* Discover Page Grid */
+
+.discoverContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 5%;
+    gap: 10px;
+}
+.discoverFigure {
+    width: 100%;
+    margin: 0;
+}
+.discoverFigure img {
+    max-width: 95%;
+}
+.discoverFigure figcaption {
+    font-size: .75em;
+}
+
+/* Join Us Page CSS */
+#joinInformation {
+    margin: 15px auto;
+    width: 90%;
+    background-color: var(--accent2);
+    padding: 2%;
+    border-radius: 10px;
+}
+#joinInformation ul {
+    font-size: 1.25em;
+    font-family: var(--macondo);
+}
+#joinInformation ul li{
+    text-align: left;
+    font-size: .75em;
+    font-family: var(--raleway);
+}
+
+#joinForm {
+    text-align: left;
+    margin: 0px 2% 15px;
+}
+#joinForm fieldset {
+    margin: 2em auto .75em;
+    border: 1px solid var(--color2);
+    border-radius: 10px;
+    padding: .5em 2%;
+}
+#joinForm legend {
+    color: var(--color2);
+    margin: 0 1em;
+}
+
+/* Thank you Page */
+#thankYou {
+    margin: 15% auto;
+    padding: 50px;
+    font-size: 3rem;
+}

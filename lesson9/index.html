@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience the very best of what the shire has to offer you.">
+    <link rel="icon" type="image/icon" href="images/favicon.ico" sizes="32x32" />
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+    <title>The Shire Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <div class="headerFlex">
+            <img src="images/shirecocCropped.webp" alt="The Shire Chamber of Commerce Logo. A sun with sunrays obscured by two hills." class="headerLogo">
+            <h1>The Shire Chamber of Commerce</h1>
+            <p class="currentDate"></p>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="menu" href="#" onclick="toggleNavigation()">&#9776;</a></li>
+                <li><a href="#" class="activePage">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://twitter.com/?lang=en">Twitter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="homepageGrid">
+            <div class="homepageContainer heroContainer">
+                <picture>
+                    <source media="(max-width: 350px)" srcset="images/tempHeroSmall.jpg">
+                    <source media="(max-width: 625px)" srcset="images/tempHeroMedium.jpg">
+                    <img src="images/tempHeroLarge.jpg" alt="Business men and a buisnesswoman look over papers at a meeting table">
+                    </picture>
+            </div>
+            <section id="homepageEvents" class="homepageContainer">
+                <h3>Events</h3>
+                <p>🎈 Baggins Birthday Bananza 🎉</p>
+                <p>Come celebrate the eleventy first birthday of the coolest hobbit around!</p>
+            </section>
+            <section id="homepageWeather" class="homepageContainer">
+                <h3>Weather</h3>
+                <div>This is a temporary spot for where I'll put the info.</div>
+                <hr>
+                <p>Wind Speed: <span id="windSpeed"></span>km/h</p>
+                <p>Wind Chill: <span id="windChill"></span></p>
+            </section>
+            <section id="homepageNews" class="homepageContainer">
+                <h3>News Release</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+            </section>
+            <article id="spotlight" class="homepageContainer">
+                <section id="spot1" class="homepageContainer">
+                    <h3>Stumbletoe Tavern</h3>
+                    <hr>
+                    <img src="images/tavern.png" alt="Silhouette of a tavern sign.">
+                    <p><em>"Good Times You Can Count On!"</em></p>
+                </section>
+                <section id="spot2" class="homepageContainer">
+                    <h3>Sackville Farms</h3>
+                    <hr>
+                    <img src="images/plant.png" alt="A small sappling.">
+                    <p><em>Fresh produce everyday.</em></p>
+                </section>
+                <section id="spot3" class="homepageContainer">
+                    Lorem ipsum dolor sit amet, sonsectetur
+                </section>
+            </article>
+            <section id="homepageJoin" class="homepageContainer">
+                <button type="button">Join</button>
+                <p>Join us here at The Shire Chamber of Commerce</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footerFlex">
+            <img src="images/shirecocCropped.webp" alt="The Shire Chamber of Commerce Logo" class="footerLogo">
+            <div>
+                <p> Email us at: <a href = "mailto:#">shirechamber@fakemail.com</a></p>
+                <p> Call us at: <a href= “tel:#”>+64(555)555-5555</a></p>
+            </div>
+            <p>1st Great East Road, The Shire, Middle Earth</p>
+            <hr>
+            <p>&copy;<span class="copyrightYear"></span> The Shire Chamber | <strong>Jaxon Hamm</strong> | WDD-230 | Last Modified: <span class="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
