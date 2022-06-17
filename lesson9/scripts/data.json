@@ -1,0 +1,88 @@
+{
+    "businesses": [
+        {
+        "name": "Test Business Name",
+        "address": "Test Address",
+        "phone": "+89 555 5555",
+        "website": "https://www.google.com",
+        "imageurl": "https://via.placeholder.com/150"
+        },
+        {
+        "name": "Test Business Name",
+        "address": "Test Address",
+        "phone": "+89 555 5555",
+        "website": "https://www.google.com",
+        "imageurl": "https://via.placeholder.com/150"
+        },
+        {
+        "name": "Test Business Name",
+        "address": "Test Address",
+        "phone": "+89 555 5555",
+        "website": "https://www.google.com",
+        "imageurl": "https://via.placeholder.com/150"
+        },
+        {
+        "name": "Test Business Name",
+        "address": "Test Address",
+        "phone": "+89 555 5555",
+        "website": "https://www.google.com",
+        "imageurl": "https://via.placeholder.com/150"
+        },
+        {
+        "name": "Test Business Name",
+        "address": "Test Address",
+        "phone": "+89 555 5555",
+        "website": "https://www.google.com",
+        "imageurl": "https://via.placeholder.com/150"
+        },
+        {
+        "name": "Test Business Name",
+        "address": "Test Address",
+        "phone": "+89 555 5555",
+        "website": "https://www.google.com",
+        "imageurl": "https://via.placeholder.com/150"
+        },
+        {
+        "name": "Test Business Name",
+        "address": "Test Address",
+        "phone": "+89 555 5555",
+        "website": "https://www.google.com",
+        "imageurl": "https://via.placeholder.com/150"
+        },
+        {
+        "name": "Test Business Name",
+        "address": "Test Address",
+        "phone": "+89 555 5555",
+        "website": "https://www.google.com",
+        "imageurl": "https://via.placeholder.com/150"
+        },
+        {
+        "name": "Test Business Name",
+        "address": "Test Address",
+        "phone": "+89 555 5555",
+        "website": "https://www.google.com",
+        "imageurl": "https://via.placeholder.com/150"
+        },
+        {
+        "name": "Test Business Name",
+        "address": "Test Address",
+        "phone": "+89 555 5555",
+        "website": "https://www.google.com",
+        "imageurl": "https://via.placeholder.com/150"
+        },
+        {
+        "name": "Test Business Name",
+        "address": "Test Address",
+        "phone": "+89 555 5555",
+        "website": "https://www.google.com",
+        "imageurl":"https://via.placeholder.com/150"
+        },
+        {
+        "name": "Test Business Name",
+        "address": "Test Address",
+        "phone": "+89 555 5555",
+        "website": "https://www.google.com",
+        "imageurl": "https://via.placeholder.com/150"
+        }
+    ]
+}
