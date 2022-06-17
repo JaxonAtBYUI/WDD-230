@@ -1,5 +1,5 @@
 // Define some constants
-const businessesURL = 'https://byui-cit230.github.io/canvas-referenced/latter-day-prophets.json'
+const businessesURL = 'https://raw.githubusercontent.com/JaxonAtBYUI/WDD-230/main/data/data.json'
 const table = document.getElementsByClassName('table')[0];
 const cards = document.getElementsByClassName('cards')[0];
 
@@ -13,7 +13,7 @@ async function getBusinesses(requestURL) {
     if (response.ok) {
         const jsonObject = await response.json();
         const businesses = jsonObject['businesses'];
-        return businesses;
+        return businesses
     }
 }
 
@@ -91,3 +91,7 @@ function reset() {
     table.innerHTML = "";
     cards.innerHTML = "";
 }
+
+const businesses = getBusinesses(businessesURL);
+
+
