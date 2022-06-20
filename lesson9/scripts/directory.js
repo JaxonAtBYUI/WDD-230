@@ -1,7 +1,8 @@
-// Define some constants
+// Define some variables
 const businessesURL = 'https://raw.githubusercontent.com/JaxonAtBYUI/WDD-230/main/data/data.json'
 const table = document.getElementsByClassName('table')[0];
 const cards = document.getElementsByClassName('cards')[0];
+let businesses;
 
 /*//////////////////////////////////////////////////////
 /   GET BUSINESSES  
@@ -12,8 +13,7 @@ async function getBusinesses(requestURL) {
     const response = await fetch(requestURL);
     if (response.ok) {
         const jsonObject = await response.json();
-        const businesses = jsonObject['businesses'];
-        return businesses
+        businesses = jsonObject['businesses'];
     }
 }
 
@@ -92,6 +92,33 @@ function reset() {
     cards.innerHTML = "";
 }
 
-const businesses = getBusinesses(businessesURL);
+/*//////////////////////////////////////////////////////
+/   CARD VIEW  
+/   Resets then displays the cards.
+//////////////////////////////////////////////////////*/
+function cardView() {
+    reset();
+    businesses.forEach(displayCards);
+}
 
+/*//////////////////////////////////////////////////////
+/   TABLE VIEW
+/   Resets then displays the table.
+//////////////////////////////////////////////////////*/
+function tableView() {
+    reset();
+    businesses.forEach(displayTable);
+}
 
+/*//////////////////////////////////////////////////////
+/   MAIN
+/   Set up the webpage for use.
+//////////////////////////////////////////////////////*/
+async function main() {
+    await getBusinesses(businessesURL);
+    cardView();
+    document.getElementById("directoryCard").addEventListener("click", cardView);
+    document.getElementById("directoryList").addEventListener("click", tableView);
+}
+
+main();
