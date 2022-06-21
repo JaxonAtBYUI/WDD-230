@@ -79,4 +79,9 @@
         filter: none;
         max-width: 93%;
     }
+
+    /* Directory Page */
+    .table {
+        font-size: 1rem;
+    }
 }

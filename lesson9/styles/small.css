@@ -327,3 +327,53 @@ footer {
     padding: 50px;
     font-size: 3rem;
 }
+
+/* Directory Page */
+#directoryButtons {
+    padding: 10px;
+}
+#directoryCard {
+    padding: 5px;
+    margin-right: 10px;
+}
+#directoryList {
+    margin-left: 10px;
+    padding: 5px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    ;
+}
+.cards section {
+    background-color: var(--accent2);
+    box-shadow: 2px 2px 7px var(--color2);
+    padding: 3px;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+}
+.cards section img {
+    padding: 5%;
+}
+.cards section a {
+    color: black
+}
+.table{
+    margin: 0px auto 10px;
+    border-collapse: collapse;
+    font-size: .8rem;
+    box-shadow: 2px 2px 7px #4d582f53;
+}
+.table tr td{
+    padding: 1rem;
+}
+.table tr:nth-child(odd) {
+    background-color: #4d582f53;
+}
+.table tr:nth-child(even) {
+    background-color: #606c3849;
+}
