@@ -270,7 +270,6 @@ footer {
 }
 
 /* Discover Page Grid */
-
 .discoverContainer {
     display: grid;
     grid-template-columns: 1fr;
@@ -345,7 +344,6 @@ footer {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    ;
 }
 .cards section {
     background-color: var(--accent2);
