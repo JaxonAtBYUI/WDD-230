@@ -1,3 +1,21 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*//////////////////////////////////////////////////////
+/   CALCULATE WIND CHILL
+/   Take the windspeed and temp, and calculate windchill.
+//////////////////////////////////////////////////////*/
 function calculateWindChill(windspeed, temp) {
     let chill;
     if ((temp > 50.0) || (windspeed < 3.0)) {

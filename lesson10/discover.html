@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover what experiences wait for you in the Shire.">
+    <link rel="icon" type="image/icon" href="images/favicon.ico" sizes="32x32" />
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/image-load.js" defer></script>
+    <script src="scripts/discoverWelcome.js" defer></script>
+    <title>The Shire Chamber of Commerce | Discover</title>
+</head>
+<body>
+    <header>
+        <div class="headerFlex">
+            <img src="images/shirecocCropped.webp" alt="The Shire Chamber of Commerce Logo. A sun with sunrays obscured by two hills." class="headerLogo">
+            <h1>The Shire Chamber of Commerce</h1>
+            <p class="currentDate"></p>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="menu" href="#" onclick="toggleNavigation()">&#9776;</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="activePage">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://twitter.com/?lang=en">Twitter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="discoverWelcome">
+            <h2><span id="discoverLastVisit"></span></h2>
+        </div>
+        <div class="discoverContainer">
+            <figure class="discoverFigure">
+                <img src="https://via.placeholder.com/400" alt="A hobbit home in the side of a grassy knoll." data-src="images/hobbitHome.webp">
+                <figcaption>Cozy Stays</figcaption>
+            </figure>
+            <figure class="discoverFigure">
+                <img src="https://via.placeholder.com/400" alt="Green rolling hills sectioned off for farming" data-src="images/farmlands.webp">
+                <figcaption>Fresh Goods</figcaption>
+            </figure>
+            <figure class="discoverFigure">
+                <img src="https://via.placeholder.com/400" alt="A large and lonely mountain shrouded in mist." data-src="images/lonelyMountain.webp">
+                <figcaption>Amazing Scenery</figcaption>
+            </figure>
+            <figure class="discoverFigure">
+                <img src="https://via.placeholder.com/400" alt="A river surrounded by rocky faces and hills overed in shrubbery winds into the distance." data-src="images/river.webp">
+                <figcaption>Beautiful Waterways</figcaption>
+            </figure>
+            <figure class="discoverFigure">
+                <img src="https://via.placeholder.com/400" alt="A signpost points to the east and west denoting cities surrounding the area." data-src="images/travel.webp">
+                <figcaption>A Hub for Travel</figcaption>
+            </figure>
+            <figure class="discoverFigure">
+                <img src="https://via.placeholder.com/400" alt="Lit up tents and lights surround a tree in a village with a rainbow in the dusk sky." data-src="images/party.webp">
+                <figcaption>Festivals and Parties</figcaption>
+            </figure>
+            <figure class="discoverFigure">
+                <img src="https://via.placeholder.com/400" alt="A well lit large tavern sits at the edge of a small lake in the evening." data-src="images/greenDragon.webp">
+                <figcaption>Nightlife</figcaption>
+            </figure>
+            <figure class="discoverFigure">
+                <img src="https://via.placeholder.com/400" alt="A traiil through a dense forest of gnarled trees is lit by streams of light through the overgrowth." data-src="images/forest.webp">
+                <figcaption>Experience Nature</figcaption>
+            </figure>
+            <figure class="discoverFigure">
+                <img src="https://via.placeholder.com/400" alt="Men float down narrow cave stream inside of barrels." data-src="images/barrels.webp">
+                <figcaption>Exciting Adventures</figcaption>
+            </figure >
+        </div>
+    </main>
+    <footer>
+        <div class="footerFlex">
+            <img src="images/shirecocCropped.webp" alt="The Shire Chamber of Commerce Logo" class="footerLogo">
+            <div>
+                <p> Email us at: <a href = "mailto:#">shirechamber@fakemail.com</a></p>
+                <p> Call us at: <a href= “tel:#”>+64(555)555-5555</a></p>
+            </div>
+            <p>1st Great East Road, The Shire, Middle Earth</p>
+            <hr>
+            <p>&copy;<span class="copyrightYear"></span> The Shire Chamber | <strong>Jaxon Hamm</strong> | WDD-230 | Last Modified: <span class="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
