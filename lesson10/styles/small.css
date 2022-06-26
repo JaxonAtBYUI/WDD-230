@@ -269,6 +269,33 @@ footer {
     font-family: var(--macondo);
 }
 
+/* Weather Formating */
+#weatherConditionImage {
+    float: left;
+    margin-left: 5%;
+}
+#temperature {
+    display: inline;
+    width: 50%;
+    font-size: 2rem;
+    padding:5%
+}
+#weatherCondition {
+    width: 100%;
+    margin-bottom: 0;
+}
+#homepageWeather hr{
+    margin: 2%
+}
+#pWindSpeed {
+    font-size: .9rem;
+    margin: 2%;
+}
+#pWindChill {
+    font-size: .9rem;
+    margin: 2%;
+}
+
 /* Discover Page Grid */
 .discoverContainer {
     display: grid;

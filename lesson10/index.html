@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <title>The Shire Chamber of Commerce</title>
 </head>
 <body>
@@ -49,10 +49,12 @@
             </section>
             <section id="homepageWeather" class="homepageContainer">
                 <h3>Weather</h3>
-                <div>This is a temporary spot for where I'll put the info.</div>
+                <img id="weatherConditionImage" src="http://via.placeholder.com/60" alt="Weather Condition">
+                <p id="temperature"></p>
+                <p id="weatherCondition"></p>
                 <hr>
-                <p>Wind Speed: <span id="windSpeed"></span>km/h</p>
-                <p>Wind Chill: <span id="windChill"></span></p>
+                <p id="pWindSpeed">Wind Speed: <span id="windSpeed"></span>km/h</p>
+                <p id="pWindChill">Wind Chill: <span id="windChill"></span></p>
             </section>
             <section id="homepageNews" class="homepageContainer">
                 <h3>News Release</h3>
