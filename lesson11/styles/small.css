@@ -412,3 +412,7 @@ footer {
 #contactForm fieldset {
     margin-bottom: 10px;
 }
+#contactBoardHeader {
+    text-align: center;
+    display: block;
+}
